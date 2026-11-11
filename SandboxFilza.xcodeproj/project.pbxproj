@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A0000012B000001 /* SBXKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0000022B000001 /* SBXKit.m */; };
-		5A0000032B000001 /* FileBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0000042B000001 /* FileBrowserViewController.m */; };
-		5A0000052B000001 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0000062B000001 /* AppDelegate.m */; };
-		5A0000072B000001 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0000082B000001 /* main.m */; };
+		5A0000012B000001 /* SBXKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0001022B000001 /* SBXKit.m */; };
+		5A0000032B000001 /* FileBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0001042B000001 /* FileBrowserViewController.m */; };
+		5A0000052B000001 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0001062B000001 /* AppDelegate.m */; };
+		5A0000072B000001 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0001072B000001 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
