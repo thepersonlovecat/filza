@@ -11,6 +11,8 @@
 #import "FileBrowserViewController.h"
 #import "SBXKit.h"
 
+#include <sys/stat.h>
+
 // ---------------------------------------------------------------------------
 // Row model
 // ---------------------------------------------------------------------------
@@ -57,13 +59,14 @@
     _textView = [[UITextView alloc] initWithFrame:self.view.bounds];
     _textView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     _textView.editable = NO;
-    _textView.font = [UIFont monospacedSystemFontOfSize:12.0];
+    _textView.font = [UIFont fontWithName:@"Menlo-Regular" size:12.0] ?: [UIFont systemFontOfSize:12.0];
     _textView.textContainerInset = UIEdgeInsetsMake(12, 12, 12, 12);
     [self.view addSubview:_textView];
 
     _spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleMedium];
     _spinner.center = CGPointMake(self.view.bounds.size.width / 2, self.view.bounds.size.height / 3);
-    _spinner.autoresizingMask = UIViewAutoresizingFlexibleMargins;
+    _spinner.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleLeftMargin
+                              | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
     [_spinner startAnimating];
     [self.view addSubview:_spinner];
 
